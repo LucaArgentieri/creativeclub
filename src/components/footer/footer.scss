@@ -1,0 +1,16 @@
+.footer_container {
+  height: 100px;
+  background-color: #29faa0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  a {
+    color: #242424;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

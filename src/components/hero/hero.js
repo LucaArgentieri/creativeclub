@@ -9,7 +9,7 @@ export default function Hero() {
 
         const tl = gsap.timeline()
 
-        tl.to('.intro', {
+        tl.to('.hero_container', {
             pointerEvents: "none",
         })
 
@@ -35,7 +35,7 @@ export default function Hero() {
         })
 
 
-        tl.to('.intro', {
+        tl.to('.hero_container', {
             pointerEvents: "all"
         })
 
@@ -46,7 +46,8 @@ export default function Hero() {
 
 
     return (
-        <div className="intro">
+
+        <div className="hero_container">
             <ul>
                 <li>
                     <span className="green">C</span>
@@ -93,10 +94,8 @@ export default function Hero() {
                     <text className="circle-text" x="0" y="0" textAnchor="middle"><textPath xlinkHref="#textPath" startOffset="50%" >Creative Club Creative Club Creative Club Creative Club Creative</textPath></text>
                 </svg>
             </div>
-
-
-
         </div >
+
     );
 }
 

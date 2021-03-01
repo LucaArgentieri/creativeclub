@@ -1,5 +1,5 @@
 .contacts_container {
-  margin-bottom: 300px;
+  margin-bottom: 50px;
 
   span {
     color: #29faa0;
@@ -74,14 +74,23 @@
 
     button {
       margin-left: 50px;
-      margin-top: 25px;
+      margin-top: 50px;
       margin-bottom: 25px;
       background-color: #29faa0;
       padding: 10px;
       border: none;
       outline: none;
       color: black;
-      width: 200px;
+      width: auto;
+      cursor: pointer;
+      font-size: 1.5rem;
     }
+  }
+}
+
+@media (max-width: 900px) {
+  .contacts_container h2 {
+    font-size: 3rem;
+    padding: 5px;
   }
 }

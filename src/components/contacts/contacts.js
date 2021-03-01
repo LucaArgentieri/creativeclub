@@ -1,6 +1,5 @@
 import React from 'react'
 import './contacts.scss'
-import { gsap } from 'gsap'
 
 
 export default function Contacts() {
@@ -15,7 +14,7 @@ export default function Contacts() {
                 <input type="text" name="" id="" />
                 <label htmlFor="">Message</label>
                 <textarea name="" id="" cols="30" rows="5"></textarea>
-                <button>Work with us</button>
+                <button>Submit</button>
             </form>
         </div>
     )
