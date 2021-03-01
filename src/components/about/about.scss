@@ -1,0 +1,63 @@
+.gif {
+  display: none;
+  position: absolute;
+  height: 200px;
+}
+.about_container {
+  margin-top: 300px;
+  margin-bottom: 300px;
+
+  span {
+    color: #29faa0;
+    font-weight: bold;
+  }
+
+  section {
+    font-size: 1.5rem;
+    color: #e5e5e5;
+    font-weight: lighter;
+  }
+
+  h2 {
+    color: #e5e5e5;
+    font-size: 6rem;
+    font-weight: 400;
+    padding-left: 50px;
+  }
+
+  div {
+    margin: 50px;
+  }
+
+  p {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .greyNormal {
+    color: #e5e5e5;
+    font-weight: lighter;
+  }
+}
+
+@media (max-width: 1200px) {
+  .about_container h2 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .about_container {
+    margin-top: 0px;
+    margin-bottom: 100px;
+
+    section,
+    p {
+      font-size: 1rem;
+    }
+  }
+  .about_container h2 {
+    font-size: 3rem;
+    padding: 5px;
+  }
+}

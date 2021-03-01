@@ -1,0 +1,15 @@
+@import "./colors";
+@import "./fonts";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+textarea,
+input,
+button {
+  font-family: "CeraPro";
+}

@@ -1,0 +1,87 @@
+.contacts_container {
+  margin-bottom: 300px;
+
+  span {
+    color: #29faa0;
+    font-weight: bold;
+  }
+
+  h2 {
+    color: #e5e5e5;
+    font-size: 6rem;
+    font-weight: 400;
+    padding-left: 50px;
+  }
+
+  form {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    label {
+      margin-top: 25px;
+      margin-bottom: 25px;
+      color: #e5e5e5;
+      font-size: 3rem;
+      font-weight: 400;
+      padding-left: 50px;
+    }
+
+    input {
+      margin-left: 50px;
+      background-color: transparent;
+      outline: none;
+      color: #e5e5e5;
+      transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+      padding: 10px;
+      background-image: linear-gradient(#29faa0, #29faa0),
+        linear-gradient(#29faa0, #29faa0), linear-gradient(#29faa0, #29faa0),
+        linear-gradient(#29faa0, #29faa0);
+      background-repeat: no-repeat;
+      background-size: 8px 3px;
+      background-position: top left, top right, bottom left, bottom right;
+      border: solid #29faa0;
+      text-align: justify;
+      border-width: 0 3px;
+
+      &:focus-within {
+        background-color: grey;
+      }
+    }
+
+    textarea {
+      margin-left: 50px;
+      background-color: transparent;
+      resize: none;
+      outline: none;
+      color: #e5e5e5;
+      transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+      padding: 10px;
+      background-image: linear-gradient(#29faa0, #29faa0),
+        linear-gradient(#29faa0, #29faa0), linear-gradient(#29faa0, #29faa0),
+        linear-gradient(#29faa0, #29faa0);
+      background-repeat: no-repeat;
+      background-size: 8px 3px;
+      background-position: top left, top right, bottom left, bottom right;
+      border: solid #29faa0;
+      text-align: justify;
+      border-width: 0 3px;
+
+      &:focus-within {
+        background-color: grey;
+      }
+    }
+
+    button {
+      margin-left: 50px;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      background-color: #29faa0;
+      padding: 10px;
+      border: none;
+      outline: none;
+      color: black;
+      width: 200px;
+    }
+  }
+}

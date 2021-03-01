@@ -1,0 +1,32 @@
+.projects_container {
+  margin-top: 300px;
+
+  span {
+    color: #29faa0;
+    font-weight: bold;
+  }
+
+  h2 {
+    color: #e5e5e5;
+    font-size: 7rem;
+    font-weight: 400;
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .projects_container h2 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .projects_container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .projects_container h2 {
+    font-size: 3rem;
+    padding: 5px;
+  }
+}
