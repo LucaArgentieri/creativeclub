@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './carousel.scss'
 import { CarouselData } from './carouselData'
 import { CgArrowLongRight, CgArrowLongLeft } from 'react-icons/cg'
+import { Link } from 'react-router-dom'
 import { gsap } from 'gsap'
 
 
@@ -119,6 +120,8 @@ export default function Carousel({ slides }) {
                                     <div key={index}>
                                         <h3>{slide.name}</h3>
                                         <p>{slide.desc}</p>
+                                        <Link to={"/" + slide.url}><button className="greenSquare">Explore Projects</button></Link>
+
                                     </div>
 
 
@@ -127,9 +130,9 @@ export default function Carousel({ slides }) {
                         )
                     })
                 }
-                <div className="greenSquare"></div>
 
             </div>
+
 
         </section >
     )

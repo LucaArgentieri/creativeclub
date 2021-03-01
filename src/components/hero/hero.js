@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react'
-import './hero.scss'
-import { gsap } from 'gsap'
+import './hero.scss';
+import { Link } from 'react-router-dom';
+import { gsap } from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+gsap.registerPlugin(ScrollToPlugin);
 
 
 export default function Hero() {
@@ -45,38 +48,51 @@ export default function Hero() {
     }, [])
 
 
+
+
+
     return (
 
         <div className="hero_container">
             <ul>
                 <li>
-                    <span className="green">C</span>
-                    <span className="white">reative P</span>
-                    <span className="green">r</span>
-                    <span className="white">oj</span>
-                    <span className="green">e</span>
-                    <span className="white">ct</span>
+                    <Link to="/creative-project">
+                        <span className="green">C</span>
+                        <span className="white">reative P</span>
+                        <span className="green">r</span>
+                        <span className="white">oj</span>
+                        <span className="green">e</span>
+                        <span className="white">ct</span>
+                    </Link>
                 </li>
                 <li>
-                    <span className="white">Br</span>
-                    <span className="green">a</span>
-                    <span className="white">nding</span>
+                    <Link to="/branding">
+                        <span className="white">Br</span>
+                        <span className="green">a</span>
+                        <span className="white">nding</span>
+                    </Link>
                 </li>
                 <li>
-                    <span className="white">Archi</span>
-                    <span className="green">t</span>
-                    <span className="white">ecture</span>
+                    <Link to="/architecture">
+                        <span className="white">Archi</span>
+                        <span className="green">t</span>
+                        <span className="white">ecture</span>
+                    </Link>
                 </li>
                 <li>
-                    <span className="green">I</span>
-                    <span className="white">nno</span>
-                    <span className="green">v</span>
-                    <span className="white">ator</span>
+                    <Link to="/innovator">
+                        <span className="green">I</span>
+                        <span className="white">nno</span>
+                        <span className="green">v</span>
+                        <span className="white">ator</span>
+                    </Link>
                 </li>
                 <li>
-                    <span className="white">Int</span>
-                    <span className="green">e</span>
-                    <span className="white">rior</span>
+                    <Link to="/interior">
+                        <span className="white">Int</span>
+                        <span className="green">e</span>
+                        <span className="white">rior</span>
+                    </Link>
                 </li>
             </ul>
 

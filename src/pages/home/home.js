@@ -7,6 +7,7 @@ import Contacts from '../../components/contacts/contacts'
 import Footer from '../../components/footer/footer'
 
 export default function home() {
+
     return (
         <>
             <Hero />

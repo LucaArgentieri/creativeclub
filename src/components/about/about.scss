@@ -6,6 +6,10 @@
 .about_container {
   margin-top: 300px;
   margin-bottom: 300px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 100vh;
 
   span {
     color: #29faa0;
@@ -50,6 +54,7 @@
   .about_container {
     margin-top: 0px;
     margin-bottom: 100px;
+    height: auto;
 
     section,
     p {
@@ -59,5 +64,6 @@
   .about_container h2 {
     font-size: 3rem;
     padding: 5px;
+    margin-left: 50px;
   }
 }
