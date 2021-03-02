@@ -56,7 +56,7 @@ export default function Hero() {
         <div className="hero_container">
             <ul>
                 <li>
-                    <Link to="/creative-project">
+                    <Link to="/creative">
                         <span className="green">C</span>
                         <span className="white">reative P</span>
                         <span className="green">r</span>

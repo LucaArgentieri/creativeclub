@@ -1,0 +1,36 @@
+.worksList_main_container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.worksList_container {
+  width: 300px;
+  height: 300px;
+
+  img {
+    width: 300px;
+  }
+
+  .parallax-effect {
+    transform-style: preserve-3d;
+  }
+  .name_container {
+    background-color: #29faa0;
+    position: relative;
+    bottom: 60px;
+    left: 100px;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateZ(60px);
+    p {
+      color: #242424;
+      font-size: 1rem;
+    }
+  }
+}

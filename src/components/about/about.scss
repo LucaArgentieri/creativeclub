@@ -45,6 +45,9 @@
 }
 
 @media (max-width: 1200px) {
+  .about_container {
+    margin-bottom: 400px;
+  }
   .about_container h2 {
     font-size: 5rem;
   }
@@ -55,6 +58,11 @@
     margin-top: 0px;
     margin-bottom: 100px;
     height: auto;
+
+    div {
+      margin: 25px;
+      margin-left: 50px;
+    }
 
     section,
     p {

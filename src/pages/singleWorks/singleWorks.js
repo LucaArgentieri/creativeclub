@@ -8,7 +8,7 @@ export default function SingleWorks() {
 
     return (
         <div>
-            {singleworks}
+            <h1>{singleworks} Project</h1>
         </div>
     )
 }
