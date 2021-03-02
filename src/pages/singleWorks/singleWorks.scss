@@ -1,0 +1,25 @@
+.singleWorks_container {
+  margin: 50px;
+
+  .greenBtn {
+    width: 50px;
+    height: 50px;
+    background-color: #29faa0;
+  }
+
+  h2 {
+    margin-top: 50px;
+    color: #f7f7f7;
+    font-size: 3rem;
+    text-transform: capitalize;
+  }
+
+  .singleWorks_info {
+    h1 {
+      color: white;
+    }
+    p {
+      color: white;
+    }
+  }
+}
