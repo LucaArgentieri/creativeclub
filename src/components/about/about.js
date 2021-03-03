@@ -6,7 +6,6 @@ import { gsap } from 'gsap'
 
 export default function About() {
 
-
     const displayBox = (e) => {
         const img = document.querySelector('.boxGif')
 

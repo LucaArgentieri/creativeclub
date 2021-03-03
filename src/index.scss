@@ -36,3 +36,11 @@ a {
   background: $green; /* Gecko Browsers */
   color: $black;
 }
+
+.cursor {
+  height: 20px;
+  width: 20px;
+  background-color: red;
+  border-radius: 100%;
+  position: absolute;
+}

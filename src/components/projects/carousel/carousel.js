@@ -148,7 +148,6 @@ export default function Carousel({ slides }) {
                                 <Tilt
                                     tiltReverse={true}
                                     glareEnable={true} glareMaxOpacity={0.3} glareColor="#ffffff" glarePosition="bottom"
-                                    reset={false}
                                 >
                                     <img
                                         key={index} src={slide.image} alt="carousel images" className="image"

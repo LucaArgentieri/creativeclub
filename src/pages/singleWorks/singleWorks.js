@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './singleWorks.scss'
 import { Link, useParams } from 'react-router-dom'
 import { WorksData } from '../works/worksData'
+import BackHome from '../../components/backHome/backHome'
 
 
 export default function SingleWorks() {
@@ -24,7 +25,7 @@ export default function SingleWorks() {
 
     return (
         <div className="singleWorks_container">
-            <Link to="/"><div className="greenBtn"></div></Link>
+            <BackHome />
 
 
             <h2>{singleworks}</h2>

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
-import { Link, useParams, useLocation } from 'react-router-dom'
+import { useParams, useLocation } from 'react-router-dom'
 import { WorksData } from './worksData'
+import BackHome from '../../components/backHome/backHome'
 import WorksList from '../../components/worksList/worksList'
 import './works.scss'
 
@@ -13,9 +14,10 @@ export default function Works() {
         window.scrollTo(0, 0);
     }, [pathname]);
 
+
     return (
         <div className="works_container">
-            <Link to="/"><div className="greenBtn"></div></Link>
+            <BackHome />
             <h2>{works} projects</h2>
 
             <WorksList data={WorksData} works={works} />
