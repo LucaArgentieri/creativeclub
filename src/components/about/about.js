@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './about.scss'
 
 import { gsap } from 'gsap'
@@ -76,6 +76,10 @@ export default function About() {
             opacity: 0
         })
     }
+
+
+
+
 
 
     return (

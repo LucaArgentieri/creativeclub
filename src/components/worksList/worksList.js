@@ -1,15 +1,17 @@
 import React, { useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import Tilt from 'react-parallax-tilt';
 import './worksList.scss'
 import { gsap } from 'gsap'
 
 export default function WorksList({ data, works }) {
 
-
-
     useEffect(() => {
-        gsap.fromTo('.worksList_container', {
+        let tl = gsap.timeline()
+        tl.to('.works_container', {
+            overflow: "hidden"
+        })
+        tl.fromTo('.worksList_container', {
             opacity: 0,
             y: "100vh",
         }, {
@@ -19,6 +21,9 @@ export default function WorksList({ data, works }) {
             stagger: {
                 amount: 1
             }
+        })
+        tl.to('.works_container', {
+            overflow: "unset"
         })
     }, [])
 

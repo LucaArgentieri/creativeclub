@@ -1,11 +1,20 @@
 import React, { useEffect, useState } from 'react'
 import './singleWorks.scss'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useParams, useLocation } from 'react-router-dom'
 import { WorksData } from '../works/worksData'
 import BackHome from '../../components/backHome/backHome'
+import PageTransition from '../../components/pageTransition/pageTransition'
 
 
 export default function SingleWorks() {
+    const { pathname } = useLocation();
+
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+
+
 
     const { singleworks } = useParams()
 
@@ -23,8 +32,12 @@ export default function SingleWorks() {
 
 
 
+
+
+
     return (
         <div className="singleWorks_container">
+            <PageTransition />
             <BackHome />
 
 
